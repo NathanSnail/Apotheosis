@@ -1055,7 +1055,7 @@ ModLuaFileAppend("data/scripts/gun/gun.lua", "mods/Apotheosis/files/gun.lua")
 
 dofile_once("mods/apotheosis/lib/injection.lua")
 
-inject(args.StringFile, modes.PREPEND, "data/shaders/post_final.frag", "// liquid distortion",
+--[[inject(args.StringFile, modes.PREPEND, "data/shaders/post_final.frag", "// liquid distortion",
 	"mods/apotheosis/files/scripts/shader/trip_red_pre.frag")
 inject(args.StringFile, modes.PREPEND, "data/shaders/post_final.frag", "gl_FragColor",
 	"mods/apotheosis/files/scripts/shader/trip_red_post.frag")
